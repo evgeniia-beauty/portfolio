@@ -15,7 +15,7 @@ test('renders the approved Vera Noir page and its source galleries', () => {
   const markup = renderToStaticMarkup(React.createElement(App))
 
   assert.match(markup, /<main\b/)
-  assert.match(markup, /<h1[^>]*>Вера Новикова<\/h1>/)
+  assert.match(markup, /<h1[^>]*>Евгения Ванюшова<\/h1>/)
   assert.match(markup, /Портфолио авторских работ/)
   assert.equal((markup.match(/class="portfolio-card\b/g) ?? []).length, 6)
   assert.equal((markup.match(/class="before-after-card\b/g) ?? []).length, 3)

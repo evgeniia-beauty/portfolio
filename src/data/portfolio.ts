@@ -16,14 +16,6 @@ export interface BeforeAfterItem {
   afterAlt: string
 }
 
-export const portfolioFilters: { value: PortfolioCategory; label: string }[] = [
-  { value: 'all', label: 'Все работы' },
-  { value: 'lash-lam', label: 'Ламинирование' },
-  { value: 'brows', label: 'Брови' },
-  { value: 'lash-ext', label: 'LED-наращивание' },
-  { value: 'complex', label: 'Комплексы' },
-]
-
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Ламинирование + Botox + Питание',

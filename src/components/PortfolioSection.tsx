@@ -1,10 +1,4 @@
-import { useState } from 'react'
-import {
-  portfolioFilters,
-  portfolioItems,
-  type PortfolioCategory,
-  type PortfolioItem,
-} from '../data/portfolio'
+import { portfolioItems, type PortfolioItem } from '../data/portfolio'
 import { BeforeAfterSection } from './BeforeAfterSection'
 
 function PortfolioCard({ item }: { item: PortfolioItem }) {
@@ -26,10 +20,6 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
 }
 
 export function PortfolioSection() {
-  const [activeFilter, setActiveFilter] = useState<PortfolioCategory>('all')
-  const visibleItems =
-    activeFilter === 'all' ? portfolioItems : portfolioItems.filter(({ category }) => category === activeFilter)
-
   return (
     <section aria-labelledby="portfolio-title" className="w-full py-space-xl" id="portfolio">
       <div className="mx-auto max-w-[1200px] px-margin-mobile md:px-margin">
@@ -47,30 +37,10 @@ export function PortfolioSection() {
             </p>
           </div>
 
-          <div aria-label="Фильтр портфолио" className="flex flex-wrap gap-2" role="group">
-            {portfolioFilters.map(({ value, label }) => {
-              const isActive = value === activeFilter
-              return (
-                <button
-                  aria-pressed={isActive}
-                  className={`rounded-lg px-4 py-2 font-label-md text-label-md uppercase tracking-wider transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary ${
-                    isActive
-                      ? 'bg-primary text-on-primary'
-                      : 'bg-surface-container text-on-surface-variant hover:text-primary'
-                  }`}
-                  key={value}
-                  onClick={() => setActiveFilter(value)}
-                  type="button"
-                >
-                  {label}
-                </button>
-              )
-            })}
-          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-space-lg md:grid-cols-2 lg:grid-cols-3">
-          {visibleItems.map((item) => (
+          {portfolioItems.map((item) => (
             <PortfolioCard item={item} key={item.title} />
           ))}
         </div>
