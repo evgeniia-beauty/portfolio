@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
     <footer className='mt-space-xl w-full border-t border-surface-variant/40 bg-surface-container py-space-lg'>
-      <div className='mx-auto flex max-w-[1200px] flex-col gap-space-md px-margin-mobile md:flex-row md:items-center md:justify-between md:px-margin'>
+      <div className='mx-auto flex max-w-300 flex-col gap-space-md px-margin-mobile md:flex-row md:items-center md:justify-between md:px-margin'>
         <p className='font-headline-sm text-headline-sm text-primary'>Евгения Ванюшова</p>
         <div
           aria-label='Контакты'

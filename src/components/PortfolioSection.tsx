@@ -22,7 +22,7 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
 export function PortfolioSection() {
   return (
     <section aria-labelledby="portfolio-title" className="w-full py-space-xl" id="portfolio">
-      <div className="mx-auto max-w-[1200px] px-margin-mobile md:px-margin">
+      <div className="mx-auto max-w-300 px-margin-mobile md:px-margin">
         <div className="mb-space-xl flex flex-col justify-between gap-space-md md:flex-row md:items-end">
           <div className="space-y-space-xs">
             <span className="font-label-md text-label-md font-semibold uppercase tracking-widest text-secondary">

@@ -1,7 +1,6 @@
 import { MaterialIcon } from './MaterialIcon'
 
-const portraitUrl =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBqmD-IlvppzdZHLKo_TVm85yVUP0AOArW1aof69H6bQZCflt6FhOUtOnWKu_3T9gWsaDz0fwD_XjBjTGiP8Po4KXpCR4q_bf4I8E0U0N_81GgXhKkuiMcxCi3zvUf9OwE7nPMMTZcjrFmEAIeZntHmEdMw4MEJ77boxIBQUXAPEwsEMKphjxU-lcVlgZUbN8Adv25ZB3bQlaSCHGeCYhFf1ty0SyYKY75Tm0fbXmIyGZBBQ5o4HRb0'
+const portraitUrl = new URL('../assets/IMG_9DF73BF1B837-1.jpeg', import.meta.url).href
 
 export function HeroSection() {
   return (
@@ -15,7 +14,7 @@ export function HeroSection() {
         className='pointer-events-none absolute -left-20 top-1/2 h-80 w-80 rounded-full bg-surface-container-high/60 blur-2xl'
       />
 
-      <div className='mx-auto max-w-[1200px] px-margin-mobile pt-space-lg md:px-margin lg:pt-space-xl'>
+      <div className='mx-auto max-w-300 px-margin-mobile pt-space-lg md:px-margin lg:pt-space-xl'>
         <div className='grid grid-cols-1 items-center gap-space-xl lg:grid-cols-12'>
           <div className='z-10 flex flex-col items-start space-y-space-md lg:col-span-7'>
             <div className='flex items-center gap-space-sm'>
@@ -70,7 +69,7 @@ export function HeroSection() {
           </div>
 
           <div className='relative mt-space-md flex justify-center lg:col-span-5 lg:mt-0'>
-            <div className='relative aspect-square w-full max-w-[440px] overflow-hidden rounded-2xl bg-surface-container shadow-2xl'>
+            <div className='relative aspect-square w-full max-w-110 overflow-hidden rounded-2xl bg-surface-container shadow-2xl'>
               <img
                 alt='Портрет модели с идеальным ламинированием ресниц и формой бровей Vera Noir Atelier'
                 className='h-full w-full object-cover'
@@ -79,7 +78,7 @@ export function HeroSection() {
               />
               <div
                 aria-hidden='true'
-                className='absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent'
+                className='absolute inset-0 bg-linear-to-t from-primary/30 via-transparent to-transparent'
               />
             </div>
             <div
