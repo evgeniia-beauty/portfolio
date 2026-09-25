@@ -45,24 +45,24 @@ export function HeroSection() {
 
             <div className='flex w-full flex-wrap items-center gap-space-sm pt-space-xs'>
               <a
-                className='inline-flex w-full items-center justify-center gap-space-xs rounded-lg bg-primary px-7 py-3.5 font-label-md text-label-md uppercase tracking-wider text-on-primary shadow-lg transition-all hover:scale-[1.01] hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary sm:w-auto'
+                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-primary px-4 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='#portfolio'
               >
-                <MaterialIcon className='text-[19px]'>auto_awesome</MaterialIcon>
+                <MaterialIcon className='text-[21px]'>auto_awesome</MaterialIcon>
                 <span>Портфолио</span>
               </a>
               <a
-                className='inline-flex w-full items-center justify-center gap-2 rounded-lg bg-surface-container px-5 py-3.5 font-title-md text-title-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary sm:w-auto'
+                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-surface-container px-4 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='tel:+79268402211'
               >
-                <MaterialIcon className='text-[20px] text-secondary'>call</MaterialIcon>
-                <span>+7 (926) 840-22-11</span>
+                <MaterialIcon className='text-[22px] text-secondary'>call</MaterialIcon>
+                <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
               </a>
               <a
-                className='inline-flex items-center gap-2 rounded-lg border border-surface-variant/40 bg-surface-container-low px-4 py-3 font-body-sm text-body-sm text-on-surface-variant shadow-sm transition-colors hover:bg-surface-container hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-surface-container px-4 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='mailto:atelier@veranoir.ru'
               >
-                <MaterialIcon className='text-[18px] text-secondary'>mail</MaterialIcon>
+                <MaterialIcon className='text-[20px] text-secondary'>mail</MaterialIcon>
                 <span>atelier@veranoir.ru</span>
               </a>
             </div>

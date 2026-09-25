@@ -1,8 +1,12 @@
-const browsLaminationImage = new URL('../assets/before-after/26791100-3F72-4AC8-8FF3-74EEFE4FEB41.PNG', import.meta.url).href
-const lashExtensionImage = new URL('../assets/before-after/2F13C963-EC0A-4859-B699-9405C73FC8A0.PNG', import.meta.url).href
+const browsLaminationImage = new URL('../assets/before-after/26791100-3F72-4AC8-8FF3-74EEFE4FEB41.PNG', import.meta.url)
+  .href
+const lashExtensionImage = new URL('../assets/before-after/2F13C963-EC0A-4859-B699-9405C73FC8A0.PNG', import.meta.url)
+  .href
 const lashLiftImage = new URL('../assets/before-after/642FC066-1992-4F58-BBB0-833A2ED0CE30.PNG', import.meta.url).href
-const browCorrectionImage = new URL('../assets/before-after/76FC6AA9-0AC2-4676-AFA4-32BD876B5EFF.PNG', import.meta.url).href
-const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8-FBBF4A645E73.PNG', import.meta.url).href
+const browCorrectionImage = new URL('../assets/before-after/76FC6AA9-0AC2-4676-AFA4-32BD876B5EFF.PNG', import.meta.url)
+  .href
+const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8-FBBF4A645E73.PNG', import.meta.url)
+  .href
 const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.PNG', import.meta.url).href
 
 const resultImage1 = new URL('../assets/results/B17D56A8-4AE0-4CF3-AAD4-3DD0CC8EFCB2.PNG', import.meta.url).href
@@ -36,7 +40,7 @@ export const portfolioItems: PortfolioItem[] = [
       'Macro beauty editorial shot of female eyes showing glossy laminated eyelashes with soft natural lift and dark deep pigment, skin with natural dewy finish',
   },
   {
-    title: 'Осветление на 1 тон & Коррекция',
+    title: 'Осветление на 1 тон + Коррекция',
     category: 'brows',
     image: resultImage2,
     imageAlt:
@@ -57,7 +61,7 @@ export const portfolioItems: PortfolioItem[] = [
       'Close up view of fluffy laminated brows with beautiful hair-by-hair texture, natural arch, glowing healthy sheen and soft powder shading underneath',
   },
   {
-    title: 'Lash Botox & Эффект распахнутого взгляда',
+    title: 'Lash Botox + Эффект распахнутого взгляда',
     category: 'lash-lam',
     image: resultImage5,
     imageAlt:
@@ -84,12 +88,12 @@ export const beforeAfterItems: BeforeAfterItem[] = [
     imageAlt: 'Ресницы до и после наращивания в объеме 1.5D',
   },
   {
-    title: 'Lash Botox & Эффект распахнутого взгляда',
+    title: 'Lash Botox + Эффект распахнутого взгляда',
     image: lashLiftImage,
     imageAlt: 'Ресницы до и после ламинирования и Botox',
   },
   {
-    title: 'Осветление на 1 тон & Коррекция',
+    title: 'Осветление на 1 тон + Коррекция',
     image: browCorrectionImage,
     imageAlt: 'Брови до и после осветления и коррекции формы',
   },
