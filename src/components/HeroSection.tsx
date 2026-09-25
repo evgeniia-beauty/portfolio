@@ -46,16 +46,16 @@ export function HeroSection() {
               результат выглядел гармонично, естественно и подходил именно вам.
             </p>
 
-            <div className='flex w-full flex-col items-start gap-space-sm pt-space-xs md:flex-row md:flex-wrap xl:flex-nowrap'>
+            <div className='flex w-full flex-col gap-space-sm pt-space-xs lg:grid lg:grid-cols-2'>
               <a
-                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-primary px-4 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-full shrink-0 items-center justify-center gap-3 rounded-lg bg-primary px-4 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary lg:col-span-2'
                 href='#portfolio'
               >
                 <MaterialIcon size={18}>auto_awesome</MaterialIcon>
                 <span>Портфолио</span>
               </a>
               <a
-                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-full shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='tel:+79268402211'
               >
                 <MaterialIcon className='text-secondary' size={20}>
@@ -64,7 +64,7 @@ export function HeroSection() {
                 <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
               </a>
               <a
-                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-full shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='mailto:vanyushova_93@mail.ru'
               >
                 <MaterialIcon className='text-secondary' size={20}>
