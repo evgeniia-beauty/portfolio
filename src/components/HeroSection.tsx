@@ -48,23 +48,23 @@ export function HeroSection() {
 
             <div className='flex w-full flex-col items-start gap-space-sm pt-space-xs md:flex-row md:flex-wrap xl:flex-nowrap'>
               <a
-                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-primary px-5 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-primary px-4 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='#portfolio'
               >
-                <MaterialIcon size={20}>auto_awesome</MaterialIcon>
+                <MaterialIcon size={18}>auto_awesome</MaterialIcon>
                 <span>Портфолио</span>
               </a>
               <a
-                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='tel:+79268402211'
               >
-                <MaterialIcon className='text-secondary' size={22}>
+                <MaterialIcon className='text-secondary' size={20}>
                   call
                 </MaterialIcon>
                 <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
               </a>
               <a
-                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-10 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='mailto:vanyushova_93@mail.ru'
               >
                 <MaterialIcon className='text-secondary' size={20}>
