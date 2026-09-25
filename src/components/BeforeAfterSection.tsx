@@ -30,9 +30,6 @@ export function BeforeAfterSection() {
           <h3 className='font-headline-lg text-headline-lg tracking-tight text-primary' id='before-after-title'>
             Результаты: До и После
           </h3>
-          <p className='max-w-xl font-body-md text-body-md text-on-surface-variant'>
-            Естественная анатомия волосков без заломов и утяжеления
-          </p>
         </div>
       </div>
       <div className='grid grid-cols-1 gap-space-lg sm:grid-cols-2 lg:grid-cols-3'>

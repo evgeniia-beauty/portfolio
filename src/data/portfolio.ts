@@ -9,8 +9,8 @@ const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8
   .href
 const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.PNG', import.meta.url).href
 
-const resultImage1 = new URL('../assets/results/IMG_4032.jpg', import.meta.url).href
-const resultImage2 = new URL('../assets/results/IMG_4132.jpg', import.meta.url).href
+const resultImage1 = new URL('../assets/results/IMG_4234.jpg', import.meta.url).href
+const resultImage2 = new URL('../assets/results/IMG_4232.jpg', import.meta.url).href
 const resultImage3 = new URL('../assets/results/IMG_4812.PNG', import.meta.url).href
 const resultImage4 = new URL('../assets/results/IMG_4815.PNG', import.meta.url).href
 const resultImage5 = new URL('../assets/results/IMG_4828.JPG', import.meta.url).href
@@ -33,35 +33,35 @@ export interface BeforeAfterItem {
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Ламинирование + Botox + Питание',
+    title: 'Ламинирование рисниц и бровей + Botox + Питание',
     category: 'lash-lam',
     image: resultImage1,
     imageAlt:
       'Macro beauty editorial shot of female eyes showing glossy laminated eyelashes with soft natural lift and dark deep pigment, skin with natural dewy finish',
   },
   {
-    title: 'Осветление на 1 тон + Коррекция',
+    title: 'Комплекс: Ламинирование ресниц и бровей',
     category: 'brows',
     image: resultImage2,
     imageAlt:
       'High precision macro photo of clean feathered natural eyebrows after soft waxing and gentle blonde hair lightening with clean brow arch on fair female model',
   },
   {
-    title: 'Бархатный 1.5D объем в цвете Mocha',
+    title: 'Типа архитектура и окрашивание бровей',
     category: 'lash-ext',
     image: resultImage3,
     imageAlt:
       'Subtle natural eyelash extension 1.5D volume in warm mocha brown color, airy feather light lashes with perfect isolation and soft eyelid line',
   },
   {
-    title: 'Воздушная долговременная укладка',
+    title: 'Ламиривание бровей + Botox',
     category: 'brows',
     image: resultImage4,
     imageAlt:
       'Close up view of fluffy laminated brows with beautiful hair-by-hair texture, natural arch, glowing healthy sheen and soft powder shading underneath',
   },
   {
-    title: 'Lash Botox + Эффект распахнутого взгляда',
+    title: 'Окрашивание и коррекция бровей',
     category: 'lash-lam',
     image: resultImage5,
     imageAlt:
@@ -78,32 +78,32 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const beforeAfterItems: BeforeAfterItem[] = [
   {
-    title: 'Ламинирование + Botox + Питание',
+    title: 'Окрашивание + Botox',
     image: browsLaminationImage,
     imageAlt: 'Брови до и после ламинирования и питания',
   },
   {
-    title: 'Бархатный 1.5D объем в цвете Mocha',
+    title: 'Корекция + Окрашивание',
     image: lashExtensionImage,
     imageAlt: 'Ресницы до и после наращивания в объеме 1.5D',
   },
   {
-    title: 'Lash Botox + Эффект распахнутого взгляда',
+    title: 'Ламинирование ресниц и бровей + Окрашивание',
     image: lashLiftImage,
     imageAlt: 'Ресницы до и после ламинирования и Botox',
   },
   {
-    title: 'Осветление на 1 тон + Коррекция',
+    title: 'Окрашивание + Коррекция',
     image: browCorrectionImage,
     imageAlt: 'Брови до и после осветления и коррекции формы',
   },
   {
-    title: 'Воздушная долговременная укладка',
+    title: 'Архитектура + Окрашивание',
     image: browStylingImage,
     imageAlt: 'Брови до и после долговременной укладки',
   },
   {
-    title: 'Комплекс: Брови + Ламинирование ресниц',
+    title: 'Коррекция + Окрашивание',
     image: complexImage,
     imageAlt: 'Брови и ресницы до и после комплексного оформления',
   },

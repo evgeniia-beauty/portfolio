@@ -26,10 +26,6 @@ export function PortfolioSection() {
             <h2 className='font-headline-lg text-headline-lg tracking-tight text-primary' id='portfolio-title'>
               Портфолио авторских работ
             </h2>
-            <p className='max-w-xl font-body-md text-body-md text-on-surface-variant'>
-              Живые макро-съемки без блюра и замыливания текстуры кожи. Чистота линий, правильное направление и здоровый
-              блеск.
-            </p>
           </div>
         </div>
 
