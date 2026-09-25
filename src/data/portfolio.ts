@@ -1,3 +1,17 @@
+const browsLaminationImage = new URL('../assets/before-after/26791100-3F72-4AC8-8FF3-74EEFE4FEB41.PNG', import.meta.url).href
+const lashExtensionImage = new URL('../assets/before-after/2F13C963-EC0A-4859-B699-9405C73FC8A0.PNG', import.meta.url).href
+const lashLiftImage = new URL('../assets/before-after/642FC066-1992-4F58-BBB0-833A2ED0CE30.PNG', import.meta.url).href
+const browCorrectionImage = new URL('../assets/before-after/76FC6AA9-0AC2-4676-AFA4-32BD876B5EFF.PNG', import.meta.url).href
+const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8-FBBF4A645E73.PNG', import.meta.url).href
+const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.PNG', import.meta.url).href
+
+const resultImage1 = new URL('../assets/results/B17D56A8-4AE0-4CF3-AAD4-3DD0CC8EFCB2.PNG', import.meta.url).href
+const resultImage2 = new URL('../assets/results/BECCFDFF-90FB-4127-9714-2FAB3231D28A.PNG', import.meta.url).href
+const resultImage3 = new URL('../assets/results/BECCFDFF-90FB-4127-9714-2FAB3231D28D.PNG', import.meta.url).href
+const resultImage4 = new URL('../assets/results/1A6D74AE-D004-44DF-A626-7F068269D04E.PNG', import.meta.url).href
+const resultImage5 = new URL('../assets/results/561A9043-8257-48A6-95D4-128598BEB77E.PNG', import.meta.url).href
+const resultImage6 = new URL('../assets/results/24903B00-4AFC-4F14-ACB8-7B462AB2F34E.PNG', import.meta.url).href
+
 export type PortfolioCategory = 'all' | 'lash-lam' | 'brows' | 'lash-ext' | 'complex'
 
 export interface PortfolioItem {
@@ -9,59 +23,50 @@ export interface PortfolioItem {
 
 export interface BeforeAfterItem {
   title: string
-  description: string
-  beforeImage: string
-  beforeAlt: string
-  afterImage: string
-  afterAlt: string
+  image: string
+  imageAlt: string
 }
 
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Ламинирование + Botox + Питание',
     category: 'lash-lam',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuChbjDQoScrxAEC8vAVXKoej445qOegkkLkXt9QIETCLQiYK5wpB_-K1yqffOp1bvL7QTiPA_5u7p_7l-SPE3bjNyQoqdIGSyumySBV9KciWYKF9_T_TJsBZXfYMvvQBcOVe5yTb-A5Yr8RRicI3HPPDyd93SAKR3KqWc9ZDrji7U5x3-DCUyakvxNrYzGUsMfGFbEuQTPCE8z6s5ZL1H1soOATU1AUMlXgV0R2qflxIxnvq_VdFxca',
+    image: resultImage1,
     imageAlt:
       'Macro beauty editorial shot of female eyes showing glossy laminated eyelashes with soft natural lift and dark deep pigment, skin with natural dewy finish',
   },
   {
     title: 'Осветление на 1 тон & Коррекция',
     category: 'brows',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDOfr1kHp_o0veXFveC_EFdNq7onmZSFbxFulLntcegB4YjOi4mCRv6psw67KdOaN3-VKrPCwccNGpMBQMyZe4t2Uxq8YW_wniU5RdGHZamamgV-Yb84tx-KwD5WD8HGdx0VTbj2P5TpIeE7_flJKbaZ7OfYBIG929w9sPYaHSRv3NPDxdMECccrC9jLkzD-mMEtKCSuWpfrolIgs_PBCH1IJq5XhNW_ubVmvSUpyY5hP2YMIpUjly3',
+    image: resultImage2,
     imageAlt:
       'High precision macro photo of clean feathered natural eyebrows after soft waxing and gentle blonde hair lightening with clean brow arch on fair female model',
   },
   {
     title: 'Бархатный 1.5D объем в цвете Mocha',
     category: 'lash-ext',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCqf04R9QUmm7PXzyK7zN02Lb58l9O6tXljWC2JZXdHk44DnIF0sxmhEaO1h_Wk8_qGDm07wpSWwt4GMN9mdu7fv7zEMkapnuAh1yhreQMKztjG_flbrr1gS5H5c7pkhMcM8aqssdbLIda3sJqCiDkBGwMxgptq8TEsbOktNgiHNqZWY1427u0L8aZis42kZgBi9INbTFe2BuGAKt7WVf8Ucprs6NCVLotP3Jw7xIdw2Ar0uIWhme2b',
+    image: resultImage3,
     imageAlt:
       'Subtle natural eyelash extension 1.5D volume in warm mocha brown color, airy feather light lashes with perfect isolation and soft eyelid line',
   },
   {
     title: 'Воздушная долговременная укладка',
     category: 'brows',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBbEPgdowO9PepdcyIZLOTma8-uGxRbTsC7qjz9fXipplsnHDoUnOiwMTWzzUzIfqqeosfbhs3hqTIuMMzHJj_o-ufhOSmoGDhFEHWUZ0InGSinKERRt1zLw90FR6yWc49xeSl_u-u20tqMQtgM-HR6xDt2MHCW_dQwt3PnV0iMPqThBKVnMZ-Yop4mpa_XNBV8lqH0QBQ_g_ivionIbGthqA-KrOeF8nlNjFT6WqYcy_ZcpTbxhLbU',
+    image: resultImage4,
     imageAlt:
       'Close up view of fluffy laminated brows with beautiful hair-by-hair texture, natural arch, glowing healthy sheen and soft powder shading underneath',
   },
   {
     title: 'Lash Botox & Эффект распахнутого взгляда',
     category: 'lash-lam',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCJ9NutGCI3AHzVmtcXxLSgZtRCaDKPOv--AzriNucBjWsu8MzTBMmBbRF3CnD1PalFSjRRrsSrCgnbziWD8YeRBdWcPQRFz4Bh4wJJwRM53EQ9MBJTcMLq6ZLG9WEOkVoqXJlRqZZ_x9kcft-Hx4iR9qyqrxdnaMLzYKUil5cYQku-B_zlpeFPPdTAQw5ILB0elqsf0xBZb-tpE55duCILuuF3b9QNNok4kP4_f3zQtvUEBJ3J_mwb',
+    image: resultImage5,
     imageAlt:
       'Ultra high-definition macro photograph of dark glossy curled eyelashes after keratin lash lifting treatment, healthy sheen, no clump mascara look',
   },
   {
     title: 'Комплекс: Брови + Ламинирование ресниц',
     category: 'complex',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBVZwMLMAmXKhyeAhLlLKivJCyAlueXa-CY9vQC0fvUjfjJnfeyLdXc67s9fEH39YaCLFBkqliNGrccHIJYnnWU4818XBfNWIyyAqNCDqmhXb_Z7_5p9Urec-BnQmg0d2AhxiCXb4-XGqnTPWSZLSvO46YxlomiTc5SBsH5xlofyuE5ZQvMS_aftRcQlZ0ypcqCK909d_Ydtd4jrBSB4TrMTYCbB5XXdAFs7j-6Yk_0D0M64521rOrD',
+    image: resultImage6,
     imageAlt:
       'Harmonious face beauty portrait of elegant woman with both perfectly styled feathery brows and glossy curved eyelashes, balanced warm aesthetic',
   },
@@ -69,33 +74,33 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const beforeAfterItems: BeforeAfterItem[] = [
   {
-    title: 'Ламинирование и питание бровей',
-    description: 'Мягкая податливая текстура, послушные волоски и естественный объем.',
-    beforeImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDwX8GePNRc1JoqR0h4BvG3FfvgXonrekst12E3qTXaqWL0cOR-21teUTxeoyTyFQy0r9v6UbYGGz0KpbMbdWGNP4Nd6CYn_8W2poRihlxZtYNQ9EutEhThERFHbkjECyYK3KD2zxZqvwCsYcNZYyvxscKhDZSQgMZF984fvg_93f_EmJSRkFeVUL7jRXy1UmtW8KlIwUFI8ZMU6hb6qjdK8diETk-vmaN3jQAIuqom_lhSD0WbyUiw',
-    beforeAlt: 'До: брови до ламинирования',
-    afterImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuAvvUn3bbHBxCtxrlMgK5M1opUrZxQ-0eAQgS3dcIzX53cwr-7vf60Xd1tztpJG9M9-DEppuKMsVoQlTKpso54_kp9pDg2TBDUW9ujgkYDd9RJi62AWEVkeniqrR_2MIc4KTdBoN-ngdGQ5iHWrdjRyuY6QQdiIldLG0Z8ZKiyEHo-GMm4DxB7SVIpPsotIwu7liumR-GHLRmEuYqTaJ8lAod9_vX021mNK7f_n0WQHHsSFSX7GSGhV',
-    afterAlt: 'После: ламинирование и протеиновое питание бровей',
+    title: 'Ламинирование + Botox + Питание',
+    image: browsLaminationImage,
+    imageAlt: 'Брови до и после ламинирования и питания',
+  },
+  {
+    title: 'Бархатный 1.5D объем в цвете Mocha',
+    image: lashExtensionImage,
+    imageAlt: 'Ресницы до и после наращивания в объеме 1.5D',
+  },
+  {
+    title: 'Lash Botox & Эффект распахнутого взгляда',
+    image: lashLiftImage,
+    imageAlt: 'Ресницы до и после ламинирования и Botox',
   },
   {
     title: 'Осветление на 1 тон & Коррекция',
-    description: 'Смягчение жесткого контура для гармонии с теплым оттенком волос.',
-    beforeImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBbEPgdowO9PepdcyIZLOTma8-uGxRbTsC7qjz9fXipplsnHDoUnOiwMTWzzUzIfqqeosfbhs3hqTIuMMzHJj_o-ufhOSmoGDhFEHWUZ0InGSinKERRt1zLw90FR6yWc49xeSl_u-u20tqMQtgM-HR6xDt2MHCW_dQwt3PnV0iMPqThBKVnMZ-Yop4mpa_XNBV8lqH0QBQ_g_ivionIbGthqA-KrOeF8nlNjFT6WqYcy_ZcpTbxhLbU',
-    beforeAlt: 'До: жесткий темный волосок бровей',
-    afterImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDOfr1kHp_o0veXFveC_EFdNq7onmZSFbxFulLntcegB4YjOi4mCRv6psw67KdOaN3-VKrPCwccNGpMBQMyZe4t2Uxq8YW_wniU5RdGHZamamgV-Yb84tx-KwD5WD8HGdx0VTbj2P5TpIeE7_flJKbaZ7OfYBIG929w9sPYaHSRv3NPDxdMECccrC9jLkzD-mMEtKCSuWpfrolIgs_PBCH1IJq5XhNW_ubVmvSUpyY5hP2YMIpUjly3',
-    afterAlt: 'После: осветление и коррекция формы',
+    image: browCorrectionImage,
+    imageAlt: 'Брови до и после осветления и коррекции формы',
   },
   {
-    title: 'Ламинирование и лифтинг ресниц',
-    description: 'Плавный открытый изгиб от корня с глубоким насыщением пигментом.',
-    beforeImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCqf04R9QUmm7PXzyK7zN02Lb58l9O6tXljWC2JZXdHk44DnIF0sxmhEaO1h_Wk8_qGDm07wpSWwt4GMN9mdu7fv7zEMkapnuAh1yhreQMKztjG_flbrr1gS5H5c7pkhMcM8aqssdbLIda3sJqCiDkBGwMxgptq8TEsbOktNgiHNqZWY1427u0L8aZis42kZgBi9INbTFe2BuGAKt7WVf8Ucprs6NCVLotP3Jw7xIdw2Ar0uIWhme2b',
-    beforeAlt: 'До: прямые ресницы без изгиба',
-    afterImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuChbjDQoScrxAEC8vAVXKoej445qOegkkLkXt9QIETCLQiYK5wpB_-K1yqffOp1bvL7QTiPA_5u7p_7l-SPE3bjNyQoqdIGSyumySBV9KciWYKF9_T_TJsBZXfYMvvQBcOVe5yTb-A5Yr8RRicI3HPPDyd93SAKR3KqWc9ZDrji7U5x3-DCUyakvxNrYzGUsMfGFbEuQTPCE8z6s5ZL1H1soOATU1AUMlXgV0R2qflxIxnvq_VdFxca',
-    afterAlt: 'После: ламинирование и лифтинг ресниц',
+    title: 'Воздушная долговременная укладка',
+    image: browStylingImage,
+    imageAlt: 'Брови до и после долговременной укладки',
+  },
+  {
+    title: 'Комплекс: Брови + Ламинирование ресниц',
+    image: complexImage,
+    imageAlt: 'Брови и ресницы до и после комплексного оформления',
   },
 ]
