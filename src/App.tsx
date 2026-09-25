@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <SiteHeader />
-      <main className="min-h-screen w-full bg-surface pt-20 text-body-md text-on-surface">
+      <main className='min-h-screen w-full bg-surface pt-20 text-body-md text-on-surface'>
         <HeroSection />
         <PortfolioSection />
       </main>

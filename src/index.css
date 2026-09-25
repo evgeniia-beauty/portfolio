@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-surface: #fcf9f3;
@@ -28,18 +28,18 @@
   --color-outline: #817471;
   --color-outline-variant: #d3c3bf;
 
-  --font-headline-lg: "Playfair Display", Georgia, serif;
-  --font-headline-lg-mobile: "Playfair Display", Georgia, serif;
-  --font-headline-md: "Playfair Display", Georgia, serif;
-  --font-headline-sm: "Playfair Display", Georgia, serif;
-  --font-display-lg: "Playfair Display", Georgia, serif;
-  --font-display-lg-mobile: "Playfair Display", Georgia, serif;
-  --font-body-lg: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-body-md: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-body-sm: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-title-md: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-label-md: "Plus Jakarta Sans", Arial, sans-serif;
-  --font-label-sm: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-headline-lg: 'Playfair Display', Georgia, serif;
+  --font-headline-lg-mobile: 'Playfair Display', Georgia, serif;
+  --font-headline-md: 'Playfair Display', Georgia, serif;
+  --font-headline-sm: 'Playfair Display', Georgia, serif;
+  --font-display-lg: 'Playfair Display', Georgia, serif;
+  --font-display-lg-mobile: 'Playfair Display', Georgia, serif;
+  --font-body-lg: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-body-sm: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-title-md: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-label-md: 'Plus Jakarta Sans', Arial, sans-serif;
+  --font-label-sm: 'Plus Jakarta Sans', Arial, sans-serif;
 
   --text-display-lg: 56px;
   --text-display-lg--line-height: 64px;
@@ -125,7 +125,7 @@ body,
 
 body {
   background: #fcf9f3;
-  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
 }
 
 img {
@@ -138,7 +138,7 @@ a {
 }
 
 .material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
+  font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -148,7 +148,7 @@ a {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  font-feature-settings: "liga";
-  -webkit-font-feature-settings: "liga";
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
