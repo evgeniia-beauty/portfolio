@@ -3,7 +3,7 @@ import { BeforeAfterSection } from './BeforeAfterSection'
 
 function PortfolioCard({ item }: { item: PortfolioItem }) {
   return (
-    <article className='portfolio-card flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-none transition-shadow duration-300 hover:shadow-[0_12px_32px_-8px_rgba(62,43,37,0.20),0_3px_9px_-4px_rgba(62,43,37,0.10)]'>
+    <article className='portfolio-card flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-none transition-shadow duration-300 hover:shadow-[0_12px_32px_-4px_rgba(62,43,37,0.20),0_3px_9px_-4px_rgba(62,43,37,0.10)]'>
       <div className='relative aspect-square w-full overflow-hidden bg-surface-container'>
         <img alt={item.imageAlt} className='h-full w-full object-cover' loading='lazy' src={item.image} />
       </div>
