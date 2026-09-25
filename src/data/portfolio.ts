@@ -9,12 +9,12 @@ const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8
   .href
 const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.PNG', import.meta.url).href
 
-const resultImage1 = new URL('../assets/results/B17D56A8-4AE0-4CF3-AAD4-3DD0CC8EFCB2.PNG', import.meta.url).href
-const resultImage2 = new URL('../assets/results/BECCFDFF-90FB-4127-9714-2FAB3231D28A.PNG', import.meta.url).href
-const resultImage3 = new URL('../assets/results/BECCFDFF-90FB-4127-9714-2FAB3231D28D.PNG', import.meta.url).href
-const resultImage4 = new URL('../assets/results/1A6D74AE-D004-44DF-A626-7F068269D04E.PNG', import.meta.url).href
-const resultImage5 = new URL('../assets/results/561A9043-8257-48A6-95D4-128598BEB77E.PNG', import.meta.url).href
-const resultImage6 = new URL('../assets/results/24903B00-4AFC-4F14-ACB8-7B462AB2F34E.PNG', import.meta.url).href
+const resultImage1 = new URL('../assets/results/IMG_4032.jpg', import.meta.url).href
+const resultImage2 = new URL('../assets/results/IMG_4132.jpg', import.meta.url).href
+const resultImage3 = new URL('../assets/results/IMG_4812.PNG', import.meta.url).href
+const resultImage4 = new URL('../assets/results/IMG_4815.PNG', import.meta.url).href
+const resultImage5 = new URL('../assets/results/IMG_4828.JPG', import.meta.url).href
+const resultImage6 = new URL('../assets/results/IMG_4832.jpg', import.meta.url).href
 
 export type PortfolioCategory = 'all' | 'lash-lam' | 'brows' | 'lash-ext' | 'complex'
 
