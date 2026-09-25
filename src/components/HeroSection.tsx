@@ -32,7 +32,7 @@ export function HeroSection() {
             </h1>
 
             <div className='inline-flex items-center gap-2 rounded-full border border-surface-variant/40 bg-secondary-fixed/40 px-3.5 py-1.5 text-primary'>
-              <MaterialIcon className='text-[18px] text-secondary'>workspace_premium</MaterialIcon>
+              <MaterialIcon className='text-secondary' size={18}>workspace_premium</MaterialIcon>
               <span className='font-label-md text-label-md font-semibold uppercase tracking-wider'>
                 Опыт работы более 6 лет
               </span>
@@ -45,25 +45,25 @@ export function HeroSection() {
 
             <div className='flex w-full flex-wrap items-center gap-space-sm pt-space-xs'>
               <a
-                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-primary px-4 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-primary px-5 font-label-md text-label-lg uppercase tracking-wider text-on-primary shadow-lg transition-colors hover:bg-primary-container focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='#portfolio'
               >
-                <MaterialIcon className='text-[21px]'>auto_awesome</MaterialIcon>
+                <MaterialIcon size={20}>auto_awesome</MaterialIcon>
                 <span>Портфолио</span>
               </a>
               <a
-                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-surface-container px-4 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='tel:+79268402211'
               >
-                <MaterialIcon className='text-[22px] text-secondary'>call</MaterialIcon>
+                <MaterialIcon className='text-secondary' size={22}>call</MaterialIcon>
                 <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
               </a>
               <a
-                className='inline-flex h-12 w-full min-w-0 flex-1 items-center justify-center gap-space-md rounded-lg bg-surface-container px-4 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
+                className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='mailto:atelier@veranoir.ru'
               >
-                <MaterialIcon className='text-[20px] text-secondary'>mail</MaterialIcon>
-                <span>atelier@veranoir.ru</span>
+                <MaterialIcon className='text-secondary' size={20}>mail</MaterialIcon>
+                <span className='whitespace-nowrap'>atelier@veranoir.ru</span>
               </a>
             </div>
           </div>

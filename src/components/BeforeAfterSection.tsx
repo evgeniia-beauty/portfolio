@@ -5,10 +5,10 @@ function BeforeAfterCard({ item }: { item: BeforeAfterItem }) {
     <article className="before-after-card flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-none transition-shadow duration-300 hover:shadow-[0_12px_32px_-8px_rgba(62,43,37,0.20),0_3px_9px_-4px_rgba(62,43,37,0.10)]">
       <div className="relative aspect-5/3 w-full overflow-hidden bg-surface-container">
         <img alt={item.imageAlt} className="h-full w-full object-cover" loading="lazy" src={item.image} />
-        <span className="absolute left-2 top-2 rounded bg-surface/85 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary backdrop-blur">
+        <span className="absolute left-2 top-2 rounded-xl bg-surface/85 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary backdrop-blur">
           До
         </span>
-        <span className="absolute right-2 top-2 rounded bg-primary/90 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-on-primary backdrop-blur">
+        <span className="absolute right-2 top-2 rounded-xl bg-primary/90 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-on-primary backdrop-blur">
           После
         </span>
       </div>
