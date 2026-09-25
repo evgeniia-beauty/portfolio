@@ -1,7 +1,5 @@
 import { MaterialIcon } from './MaterialIcon'
 
-// const portraitUrl = new URL('../assets/IMG_9DF73BF1B837-1.jpeg', import.meta.url).href
-// const portraitUrl = new URL('../assets/IMG_4762.jpg', import.meta.url).href
 const portraitUrl = new URL('../assets/IMG_4855.jpg', import.meta.url).href
 
 export function HeroSection() {
