@@ -10,8 +10,11 @@ export function SiteFooter() {
           <a className='text-on-surface-variant transition-colors hover:text-primary' href='tel:+79268402211'>
             +7 (926) 840-22-11
           </a>
-          <a className='text-on-surface-variant transition-colors hover:text-primary' href='mailto:atelier@veranoir.ru'>
-            atelier@veranoir.ru
+          <a
+            className='text-on-surface-variant transition-colors hover:text-primary'
+            href='mailto:vanyushova_93@mail.ru'
+          >
+            vanyushova_93@mail.ru
           </a>
         </div>
       </div>

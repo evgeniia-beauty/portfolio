@@ -1,6 +1,8 @@
 import { MaterialIcon } from './MaterialIcon'
 
-const portraitUrl = new URL('../assets/IMG_9DF73BF1B837-1.jpeg', import.meta.url).href
+// const portraitUrl = new URL('../assets/IMG_9DF73BF1B837-1.jpeg', import.meta.url).href
+// const portraitUrl = new URL('../assets/IMG_4762.jpg', import.meta.url).href
+const portraitUrl = new URL('../assets/IMG_4855.jpg', import.meta.url).href
 
 export function HeroSection() {
   return (
@@ -20,7 +22,7 @@ export function HeroSection() {
             <div className='flex items-center gap-space-sm'>
               <span aria-hidden='true' className='h-px w-8 bg-secondary' />
               <span className='font-label-md text-label-md font-semibold uppercase tracking-widest text-secondary'>
-                Мастер взгляда &amp; Эстетика
+                Brow &amp; lash master
               </span>
             </div>
 
@@ -32,15 +34,20 @@ export function HeroSection() {
             </h1>
 
             <div className='inline-flex items-center gap-2 rounded-full border border-surface-variant/40 bg-secondary-fixed/40 px-3.5 py-1.5 text-primary'>
-              <MaterialIcon className='text-secondary' size={18}>workspace_premium</MaterialIcon>
+              <MaterialIcon className='text-secondary' size={18}>
+                workspace_premium
+              </MaterialIcon>
               <span className='font-label-md text-label-md font-semibold uppercase tracking-wider'>
-                Опыт работы более 6 лет
+                Опыт работы более 2 лет
               </span>
             </div>
 
             <p className='max-w-xl font-body-lg text-body-lg text-on-surface-variant'>
-              Персонализированная архитектура бровей, бережное ламинирование и деликатное наращивание ресниц с
-              бескомпромиссным сохранением здоровья ваших натуральных волосков.
+              {/* Персонализированная архитектура бровей и бережное ламинирование с
+              бескомпромиссным сохранением здоровья ваших натуральных волосков. */}
+              Подчеркну вашу естественную красоту и аккуратно оформлю взгляд: архитектура, коррекция и окрашивание
+              бровей, окрашивание и ламинирование бровей и ресниц. Индивидуально подбираю форму и оттенок, чтобы
+              результат выглядел гармонично, естественно и подходил именно вам.
             </p>
 
             <div className='flex w-full flex-wrap items-center gap-space-sm pt-space-xs'>
@@ -55,15 +62,19 @@ export function HeroSection() {
                 className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
                 href='tel:+79268402211'
               >
-                <MaterialIcon className='text-secondary' size={22}>call</MaterialIcon>
+                <MaterialIcon className='text-secondary' size={22}>
+                  call
+                </MaterialIcon>
                 <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
               </a>
               <a
                 className='inline-flex h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-5 font-body-sm text-body-md text-primary shadow-sm transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary'
-                href='mailto:atelier@veranoir.ru'
+                href='mailto:vanyushova_93@mail.ru'
               >
-                <MaterialIcon className='text-secondary' size={20}>mail</MaterialIcon>
-                <span className='whitespace-nowrap'>atelier@veranoir.ru</span>
+                <MaterialIcon className='text-secondary' size={20}>
+                  mail
+                </MaterialIcon>
+                <span className='whitespace-nowrap'>vanyushova_93@mail.ru</span>
               </a>
             </div>
           </div>
