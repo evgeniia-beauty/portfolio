@@ -1,3 +1,4 @@
+import { contacts } from '../data/contacts'
 import { MaterialIcon } from './MaterialIcon'
 
 const portraitUrl = new URL('../assets/IMG_4855.jpg', import.meta.url).href
@@ -56,21 +57,21 @@ export function HeroSection() {
               </a>
               <a
                 className='inline-flex h-11 w-full shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-lg transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary xl:w-fit'
-                href='tel:+79268402211'
+                href={`tel:${contacts.phone.number}`}
               >
                 <MaterialIcon className='text-secondary' size={20}>
                   call
                 </MaterialIcon>
-                <span className='whitespace-nowrap'>+7 (926) 840-22-11</span>
+                <span className='whitespace-nowrap'>{contacts.phone.label}</span>
               </a>
               <a
                 className='inline-flex h-11 w-full shrink-0 items-center justify-center gap-3 rounded-lg bg-surface-container px-4 font-body-sm text-body-sm text-primary shadow-lg transition-colors hover:bg-surface-variant focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary xl:w-fit'
-                href='mailto:vanyushova_93@mail.ru'
+                href={`mailto:${contacts.email}`}
               >
                 <MaterialIcon className='text-secondary' size={20}>
                   mail
                 </MaterialIcon>
-                <span className='whitespace-nowrap'>vanyushova_93@mail.ru</span>
+                <span className='whitespace-nowrap'>{contacts.email}</span>
               </a>
             </div>
           </div>

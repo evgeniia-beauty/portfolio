@@ -1,3 +1,5 @@
+import { contacts } from '../data/contacts'
+
 export function SiteFooter() {
   return (
     <footer className='mt-space-xl w-full border-t border-surface-variant/40 bg-surface-container py-space-xl'>
@@ -7,14 +9,14 @@ export function SiteFooter() {
           aria-label='Контакты'
           className='flex flex-col gap-space-sm font-title-md text-title-md sm:flex-row sm:gap-space-lg'
         >
-          <a className='text-on-surface-variant transition-colors hover:text-primary' href='tel:+79268402211'>
-            +7 (926) 840-22-11
-          </a>
           <a
             className='text-on-surface-variant transition-colors hover:text-primary'
-            href='mailto:vanyushova_93@mail.ru'
+            href={`tel:${contacts.phone.number}`}
           >
-            vanyushova_93@mail.ru
+            {contacts.phone.label}
+          </a>
+          <a className='text-on-surface-variant transition-colors hover:text-primary' href={`mailto:${contacts.email}`}>
+            {contacts.email}
           </a>
         </div>
       </div>

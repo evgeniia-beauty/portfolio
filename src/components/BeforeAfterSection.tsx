@@ -1,8 +1,9 @@
 import { beforeAfterItems, type BeforeAfterItem } from '../data/portfolio'
+import { galleryCardClassName } from './galleryCardStyles'
 
 function BeforeAfterCard({ item }: { item: BeforeAfterItem }) {
   return (
-    <article className='before-after-card flex flex-col overflow-hidden rounded-2xl bg-surface-container-low shadow-none transition-shadow duration-300 hover:shadow-[0_12px_32px_-4px_rgba(62,43,37,0.20),0_3px_9px_-4px_rgba(62,43,37,0.10)]'>
+    <article className={`before-after-card ${galleryCardClassName}`}>
       <div className='relative aspect-5/3 w-full overflow-hidden bg-surface-container'>
         <img alt={item.imageAlt} className='h-full w-full object-cover' loading='lazy' src={item.image} />
         <span className='absolute left-2 top-2 rounded-xl bg-surface/85 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-primary backdrop-blur'>
