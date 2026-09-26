@@ -1,13 +1,9 @@
-const browsLaminationImage = new URL('../assets/before-after/26791100-3F72-4AC8-8FF3-74EEFE4FEB41.PNG', import.meta.url)
-  .href
-const lashExtensionImage = new URL('../assets/before-after/2F13C963-EC0A-4859-B699-9405C73FC8A0.PNG', import.meta.url)
-  .href
-const lashLiftImage = new URL('../assets/before-after/642FC066-1992-4F58-BBB0-833A2ED0CE30.PNG', import.meta.url).href
-const browCorrectionImage = new URL('../assets/before-after/76FC6AA9-0AC2-4676-AFA4-32BD876B5EFF.PNG', import.meta.url)
-  .href
-const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8-FBBF4A645E73.PNG', import.meta.url)
-  .href
-const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.PNG', import.meta.url).href
+const browsLaminationImage = new URL('../assets/before-after/26791100-3F72-4AC8-8FF3-74EEFE4FEB41.webp', import.meta.url).href
+const lashExtensionImage = new URL('../assets/before-after/2F13C963-EC0A-4859-B699-9405C73FC8A0.webp', import.meta.url).href
+const lashLiftImage = new URL('../assets/before-after/642FC066-1992-4F58-BBB0-833A2ED0CE30.webp', import.meta.url).href
+const browCorrectionImage = new URL('../assets/before-after/76FC6AA9-0AC2-4676-AFA4-32BD876B5EFF.webp', import.meta.url).href
+const browStylingImage = new URL('../assets/before-after/C84D9820-4F24-4E8B-ABD8-FBBF4A645E73.webp', import.meta.url).href
+const complexImage = new URL('../assets/before-after/FC1DFAC3-217D-4651-BBC7-3BAF3A0B6A0F.webp', import.meta.url).href
 
 const resultImage1 = new URL('../assets/results/IMG_4234.jpg', import.meta.url).href
 const resultImage2 = new URL('../assets/results/IMG_4232.jpg', import.meta.url).href
