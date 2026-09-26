@@ -31,7 +31,7 @@ export function PortfolioSection() {
 
         <div className='grid grid-cols-1 gap-space-lg md:grid-cols-2 lg:grid-cols-3'>
           {portfolioItems.map((item) => (
-            <PortfolioCard item={item} key={item.title} />
+            <PortfolioCard item={item} key={item.id} />
           ))}
         </div>
 

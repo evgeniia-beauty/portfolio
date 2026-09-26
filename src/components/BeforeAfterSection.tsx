@@ -19,7 +19,7 @@ function BeforeAfterCard({ item }: { item: BeforeAfterItem }) {
   )
 }
 
-export function BeforeAfterSection() {
+export function BeforeAfterSection({ items = beforeAfterItems }: { items?: readonly BeforeAfterItem[] }) {
   return (
     <section aria-labelledby='before-after-title' className='mt-space-xl py-space-lg lg:py-space-xl'>
       <div className='mb-space-xl flex flex-col justify-between gap-space-md md:flex-row md:items-end'>
@@ -33,8 +33,8 @@ export function BeforeAfterSection() {
         </div>
       </div>
       <div className='grid grid-cols-1 gap-space-lg sm:grid-cols-2 lg:grid-cols-3'>
-        {beforeAfterItems.map((item) => (
-          <BeforeAfterCard item={item} key={item.title} />
+        {items.map((item) => (
+          <BeforeAfterCard item={item} key={item.id} />
         ))}
       </div>
     </section>

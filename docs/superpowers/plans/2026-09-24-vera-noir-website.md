@@ -1,5 +1,7 @@
 # Vera Noir Atelier Website Implementation Plan
 
+> Historical plan. Current requirements for gallery size and filters are recorded in `DESIGN_SOURCE.md`; categories and filters are no longer used.
+
 > **For agentic workers:** Inline execution in this session, as authorized by the user.
 
 **Goal:** Recreate the only approved Stitch screen as a responsive React and TypeScript portfolio page.

@@ -16,16 +16,15 @@ const resultImage4 = new URL('../assets/results/IMG_4815.PNG', import.meta.url).
 const resultImage5 = new URL('../assets/results/IMG_4828.JPG', import.meta.url).href
 const resultImage6 = new URL('../assets/results/IMG_4832.jpg', import.meta.url).href
 
-export type PortfolioCategory = 'all' | 'lash-lam' | 'brows' | 'lash-ext' | 'complex'
-
 export interface PortfolioItem {
+  id: string
   title: string
-  category: Exclude<PortfolioCategory, 'all'>
   image: string
   imageAlt: string
 }
 
 export interface BeforeAfterItem {
+  id: string
   title: string
   image: string
   imageAlt: string
@@ -33,78 +32,78 @@ export interface BeforeAfterItem {
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Ламинирование рисниц и бровей + Botox + Питание',
-    category: 'lash-lam',
+    id: 'result-4234',
+    title: 'Ламинирование ресниц и бровей + Botox + Питание',
     image: resultImage1,
-    imageAlt:
-      'Macro beauty editorial shot of female eyes showing glossy laminated eyelashes with soft natural lift and dark deep pigment, skin with natural dewy finish',
+    imageAlt: 'Портрет девушки после ламинирования ресниц и бровей и ухода с ботоксом',
   },
   {
+    id: 'result-4232',
     title: 'Комплекс: Ламинирование ресниц и бровей',
-    category: 'brows',
     image: resultImage2,
-    imageAlt:
-      'High precision macro photo of clean feathered natural eyebrows after soft waxing and gentle blonde hair lightening with clean brow arch on fair female model',
+    imageAlt: 'Портрет девушки после ламинирования ресниц и бровей',
   },
   {
-    title: 'Типа архитектура и окрашивание бровей',
-    category: 'lash-ext',
+    id: 'result-4812',
+    title: 'Архитектура и окрашивание бровей',
     image: resultImage3,
-    imageAlt:
-      'Subtle natural eyelash extension 1.5D volume in warm mocha brown color, airy feather light lashes with perfect isolation and soft eyelid line',
+    imageAlt: 'Брови девушки после архитектуры и окрашивания',
   },
   {
-    title: 'Ламиривание бровей + Botox',
-    category: 'brows',
+    id: 'result-4815',
+    title: 'Ламинирование бровей + Botox',
     image: resultImage4,
-    imageAlt:
-      'Close up view of fluffy laminated brows with beautiful hair-by-hair texture, natural arch, glowing healthy sheen and soft powder shading underneath',
+    imageAlt: 'Брови девушки после ламинирования и ухода с ботоксом',
   },
   {
+    id: 'result-4828',
     title: 'Окрашивание и коррекция бровей',
-    category: 'lash-lam',
     image: resultImage5,
-    imageAlt:
-      'Ultra high-definition macro photograph of dark glossy curled eyelashes after keratin lash lifting treatment, healthy sheen, no clump mascara look',
+    imageAlt: 'Брови девушки после окрашивания и коррекции',
   },
   {
+    id: 'result-4832',
     title: 'Комплекс: Брови + Ламинирование ресниц',
-    category: 'complex',
     image: resultImage6,
-    imageAlt:
-      'Harmonious face beauty portrait of elegant woman with both perfectly styled feathery brows and glossy curved eyelashes, balanced warm aesthetic',
+    imageAlt: 'Брови и ресницы девушки после ламинирования ресниц и оформления бровей',
   },
 ]
 
 export const beforeAfterItems: BeforeAfterItem[] = [
   {
+    id: 'comparison-26791100',
     title: 'Окрашивание + Botox',
     image: browsLaminationImage,
-    imageAlt: 'Брови до и после ламинирования и питания',
+    imageAlt: 'Брови до и после окрашивания и ухода с ботоксом',
   },
   {
-    title: 'Корекция + Окрашивание',
+    id: 'comparison-2f13c963',
+    title: 'Коррекция + Окрашивание',
     image: lashExtensionImage,
-    imageAlt: 'Ресницы до и после наращивания в объеме 1.5D',
+    imageAlt: 'Брови до и после коррекции и окрашивания',
   },
   {
+    id: 'comparison-642fc066',
     title: 'Ламинирование ресниц и бровей + Окрашивание',
     image: lashLiftImage,
-    imageAlt: 'Ресницы до и после ламинирования и Botox',
+    imageAlt: 'Брови и ресницы до и после ламинирования и окрашивания',
   },
   {
+    id: 'comparison-76fc6aa9',
     title: 'Окрашивание + Коррекция',
     image: browCorrectionImage,
-    imageAlt: 'Брови до и после осветления и коррекции формы',
+    imageAlt: 'Брови до и после окрашивания и коррекции',
   },
   {
+    id: 'comparison-c84d9820',
     title: 'Архитектура + Окрашивание',
     image: browStylingImage,
-    imageAlt: 'Брови до и после долговременной укладки',
+    imageAlt: 'Брови до и после архитектуры и окрашивания',
   },
   {
+    id: 'comparison-fc1dfac3',
     title: 'Коррекция + Окрашивание',
     image: complexImage,
-    imageAlt: 'Брови и ресницы до и после комплексного оформления',
+    imageAlt: 'Брови до и после коррекции и окрашивания',
   },
 ]
