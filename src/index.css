@@ -123,6 +123,12 @@ body,
   margin: 0;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: #fcf9f3;
   font-family: 'Plus Jakarta Sans', Arial, sans-serif;
