@@ -79,7 +79,7 @@ export function HeroSection() {
           <div className='relative mt-space-md flex justify-center lg:col-span-5 lg:mt-0 xl:col-span-4'>
             <div className='relative aspect-square w-full max-w-110 overflow-hidden rounded-2xl bg-surface-container shadow-2xl'>
               <img
-                alt='Портрет модели с идеальным ламинированием ресниц и формой бровей Vera Noir Atelier'
+                alt='Фотом мастера Евгении Ванюшовой с идеальной формой бровей и ламинированием ресниц'
                 className='h-full w-full object-cover'
                 fetchPriority='high'
                 src={portraitUrl}

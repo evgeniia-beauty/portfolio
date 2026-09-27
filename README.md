@@ -1,4 +1,4 @@
-# Vera Noir Atelier
+# Мастер бровей & ресниц
 
 Портфолио мастера Евгении Ванюшовой. Страница собрана на React, TypeScript, Vite и Tailwind CSS.
 

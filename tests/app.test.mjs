@@ -13,7 +13,7 @@ after(async () => {
   await server.close()
 })
 
-test('renders the approved Vera Noir page and its source galleries', () => {
+test('renders the approved Portfolio page and its source galleries', () => {
   const markup = renderToStaticMarkup(React.createElement(App))
 
   assert.match(markup, /<main\b/)
